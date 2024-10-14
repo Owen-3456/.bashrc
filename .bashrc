@@ -25,3 +25,8 @@ eval"$(zoxide init bash)"
 
 #oh-my-posh set up
 eval "$(oh-my-posh init bash --config https://raw.githubusercontent.com/Owen-3456/power-shell-profile/main/nordcustom.omp.json)"
+
+# runs fastfetch if it is installed
+if [ -f /usr/bin/fastfetch ]; then
+	fastfetch
+fi
