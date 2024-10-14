@@ -17,3 +17,6 @@ alias ssh-servername "ssh user@0.0.0.0"
 # Zoxide setup
 export PATH="$HOME/.local/bin:$PATH"
 eval"$(zoxide init bash)"
+
+#oh-my-posh set up
+eval "$(oh-my-posh init bash --config https://raw.githubusercontent.com/Owen-3456/power-shell-profile/main/nordcustom.omp.json)"
