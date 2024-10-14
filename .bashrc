@@ -10,3 +10,6 @@ Remove pack and deps: -Q
 Install from file: -U
 Clear cache: -Scc
 '"
+
+# SSH Aliases
+alias ssh-servername "ssh user@0.0.0.0"
