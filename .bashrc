@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Pacman helper
 alias pacman-shell="echo '
 Update: -Sy
