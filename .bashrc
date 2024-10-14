@@ -14,6 +14,9 @@ Clear cache: -Scc
 # SSH Aliases
 alias ssh-servername="ssh user@0.0.0.0"
 
+# Linutil alias
+alias linutil="curl -fsSL https://christitus.com/linux | sh"
+
 # Zoxide setup
 export PATH="$HOME/.local/bin:$PATH"
 eval"$(zoxide init bash)"
