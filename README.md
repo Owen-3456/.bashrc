@@ -1,2 +1,2 @@
-# .bashrc
-Custom .bashrc
+# mybash
+My Custom .bashrc file
