@@ -49,8 +49,9 @@ mkcd() {
 
 # Custom Aliases
 
-# Pacman helper
-alias pacman-shell="echo '
+# Pacman helper function
+pacman-help() {
+	echo '
 Update: -Sy
 Upgrade: -Syu
 Install: -S
@@ -60,7 +61,8 @@ Remove: -R
 Remove pack and deps: -Q
 Install from file: -U
 Clear cache: -Scc
-'"
+'
+}
 
 # SSH Aliases
 alias ssh-servername="ssh user@0.0.0.0"
