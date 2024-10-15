@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 #
 # ~/.bashrc
 #
@@ -8,11 +9,6 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
-
-# Auto-completion
-if [ -f /etc/bash_completion ]; then
-	. /etc/bash_completion
-fi
 
 # Environment Variables
 export EDITOR='nano'
@@ -40,7 +36,7 @@ mkcd() {
 
 # Pacman helper function
 pacmanhelp() {
-    echo '
+	echo '
 Update: -Sy
 Upgrade: -Syu
 Install: -S
@@ -63,5 +59,12 @@ alias linutil="curl -fsSL https://christitus.com/linux | sh"
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init bash)"
 
+# Enables bash completions
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+	. /usr/share/bash-completion/bash_completion
+fi
+
 #oh-my-posh config
-eval "$(oh-my-posh init bash --config $HOME/.config/oh-my-posh/nordcustom.omp.json)"
+eval "$(oh-my-posh init bash --config "$HOME"/.config/oh-my-posh/nordcustom.omp.json)"
+
+clear
