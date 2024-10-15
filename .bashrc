@@ -1,4 +1,3 @@
-#!/bin/bash
 #
 # ~/.bashrc
 #
@@ -6,19 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# History Configuration
-HISTSIZE=1000
-HISTFILESIZE=2000
-HISTCONTROL=ignoredups:erasedups
-shopt -s histappend
-
-# Enable Color Support
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+PS1='[\u@\h \W]\$ '
 
 # Auto-completion
 if [ -f /etc/bash_completion ]; then
